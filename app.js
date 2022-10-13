@@ -16,3 +16,7 @@ app.use("/", require("./router/rutas")) //las rutas
 app.use((req, res, next) => {
     res.status(404).render("404")
 })
+
+app.listen(port, () => {
+    console.log("servidor en el puerto: " + port);
+})
