@@ -1,0 +1,27 @@
+<%- include("template/cabecera", {titulo: "crea al animal" }) %>
+    <div class="container">
+        <h1>Crear su animalesco</h1>
+        <form action="/mascotas" method="POST">
+            <input
+                type="text"
+                placeholder="Agregue el nombre"
+                class="form-control my-2"
+                name="nombre"
+            >
+            <input
+                type="text"
+                placeholder="Agregue sus rasgos"
+                class="form-control my-2"
+                name="descripcion"
+            >
+            <button
+                class="btn btn-primary btn-block"
+                type="submit"
+            >
+                Añada
+            </button>
+        </form>
+    </div>
+
+
+<%- include("template/footer") %>
